@@ -3,8 +3,12 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return response()->json(['message'=>'Hello Api']);
+Route::post('/login', function () {
+    return response()->json(['Login ok']);
+});
+
+Route::post('/register', function () {
+    return response('OK');
 });
 
 Route::get('/user', function (Request $request) {
